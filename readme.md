@@ -7,7 +7,7 @@
 
 <a href='https://rwserve.readwritetools.com'><img src='./img/rwserve.png' width=80 align=right /></a>
 
-###### *Stuff you'll want, when writing your plugin *
+###### Stuff you'll want, when writing your plugin
 
 # RWSERVE Plugin SDK
 
@@ -19,7 +19,7 @@
 
 ### Motivation
 
-Any RWSERVE plugin that you write will need a few basic tools, in order to
+Any RWSERVE plugin that you write will need a few basic tools in order to
 operate nicely within the server environment. Use of these is not mandatory. You
 are free to develop your plugin with your own set of helper functions.
 
