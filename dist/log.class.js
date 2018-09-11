@@ -1,11 +1,11 @@
 //=============================================================================
 //
-// File:         rwt/rwserve/src/log.class.js
-// Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2018
-// License:      CC-BY-NC-ND 4.0
-// Initial date: Feb 28, 2018
-// Contents:     Logging using "trace | invalid | logic"
+// File:         rwserve-plugin-sdk/src/log.class.js
+// Language:     ECMAScript 2017
+// Copyright:    Read Write Tools © 2018
+// License:      MIT License
+// Initial date: Sep 10, 2018
+// Contents:     Logging with identifier prefix
 //
 //=============================================================================
 
@@ -18,7 +18,6 @@ module.exports = class Log {
 	static header(identifier, message)	{ return Log.write(identifier, message); }		// 'request' || 'staging' || 'info' || 'response'
 	static error(message)				{ return Log.write('error   ', message); }
 	static cluster(message)				{ return Log.write('cluster ', message); }
-	static harness(message)				{ return Log.write('harness ', message); }		// for testHarness only
 	static debug(method, message)		{ return Log.write('debug   ', method.padEnd(26).substr(0, 25) + message); }
 			
 	static write(identifier, message) {

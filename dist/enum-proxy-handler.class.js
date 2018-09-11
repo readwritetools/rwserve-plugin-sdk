@@ -1,10 +1,10 @@
 //=============================================================================
 //
-// File:         blue/src/enum/enum-proxy-handler.class.js
-// Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2017
-// License:      CC-BY-NC-ND 4.0
-// Initial date: Jan 18, 2017
+// File:         rwserve-plugin-sdk/src/enum-proxy-handler.class.js
+// Language:     ECMAScript 2017
+// Copyright:    Read Write Tools © 2018
+// License:      MIT License
+// Initial date: Sep 10, 2018
 // Contents:     A Proxy handler for enums
 //
 //=============================================================================

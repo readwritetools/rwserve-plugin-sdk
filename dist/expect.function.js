@@ -1,10 +1,10 @@
 //=============================================================================
 //
-// File:         joezone/src/expect.function.js
-// Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2015
-// License:      CC-BY-NC-ND 4.0
-// Initial date: Sep 13, 2015
+// File:         rwserve-plugin-sdk/src/expect.function.js
+// Language:     ECMAScript 2017
+// Copyright:    Read Write Tools © 2018
+// License:      MIT License
+// Initial date: Sep 10, 2018
 // Contents:     Explicit type checking 
 //
 //=============================================================================

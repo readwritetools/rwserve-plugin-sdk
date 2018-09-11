@@ -1,10 +1,10 @@
 //=============================================================================
 //
-// File:         joezone/src/stack-trace.class.js
-// Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2015
-// License:      CC-BY-NC-ND 4.0
-// Initial date: Sep 27, 2015
+// File:         rwserve-plugin-sdk/src/stack-trace.class.js
+// Language:     ECMAScript 2017
+// Copyright:    Read Write Tools © 2018
+// License:      MIT License
+// Initial date: Sep 10, 2018
 // Contents:     Stack trace functions
 //
 //=============================================================================
@@ -21,7 +21,7 @@ module.exports = class StackTrace {
 		// create an Error object, but don't throw it
 		var stackTraceLine = (new Error).stack.split("\n")[depth];
 		
-		// extract the classname and member name from the backtrace (assuming the backtrace pattern adopted by "node")
+		// extract the classname and member name from the backtrace (assuming the backtrace pattern adopted by V8/Node.js)
 		var regex1 = /at (.*) ?\(/g;
 		var matches = regex1.exec(stackTraceLine);
 		var desiredOutput = '';
@@ -29,7 +29,7 @@ module.exports = class StackTrace {
 			return stackTraceLine;
 		if (matches.length > 1)
 			desiredOutput += matches[1].trim();
-		desiredOutput = StackTrace.rightAlign(desiredOutput, 30);
+		desiredOutput = desiredOutput.padStart(30, ' ');
 		return `{${desiredOutput}}`;
 	}
 
@@ -107,16 +107,5 @@ module.exports = class StackTrace {
 			info.filename = pathAndFile;
 		
 		return info;
-	}
-	
-	// Can't use Text.rightAlign because it results in a circular require
-	//^ Right align the given string to fit within a fixed width character column
-    static rightAlign(s, width) {
-    	var columnLen = width;
-    	var stringLen = s.length;
-    	if (stringLen > columnLen)
-    		return s.substr(0,columnLen-3) + '...';
-    	else
-    		return Array(columnLen+1 - stringLen).join(' ') + s;
-    }
+	}	
 }

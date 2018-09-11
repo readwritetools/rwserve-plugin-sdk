@@ -1,11 +1,11 @@
 //=============================================================================
 //
-// File:         rwserve/src/enum/http-status-code.enum.js
-// Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2018
-// License:      CC-BY-NC-ND 4.0
-// Initial date: Mar 10, 2018
-// Contents:     HTTP response code
+// File:         rwserve-plugin-sdk/http-status-code.enum.js
+// Language:     ECMAScript 2017
+// Copyright:    Read Write Tools © 2018
+// License:      MIT License
+// Initial date: Sep 10, 2018
+// Contents:     HTTP response status codes
 //
 //=============================================================================
 

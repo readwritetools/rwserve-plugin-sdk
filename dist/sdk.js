@@ -1,10 +1,10 @@
 //=============================================================================
 //
-// File:         /rwserve-plugin-sdk/src/index.js
-// Language:     ECMAScript 2015
-// Copyright:    Joe Honton © 2018
-// License:      CC-BY-NC-ND 4.0
-// Initial date: Sep 4, 2018
+// File:         rwserve-plugin-sdk/src/sdk.js
+// Language:     ECMAScript 2017
+// Copyright:    Read Write Tools © 2018
+// License:      MIT License
+// Initial date: Sep 10, 2018
 // Contents:     Functions, classes and enums for developing RWSERVE plugins
 //
 //=============================================================================
