@@ -2,18 +2,27 @@
   "name": "rwserve-plugin-sdk",
   "version": "1.0.1",
   "description": "Functions, classes and enums for developing RWSERVE plugins",
-  "private": true,
   "author": "Read Write Tools",
-  "license": "MIT License",
+  "license": "MIT",
   "main": "dist/sdk.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/readwritetools/rwserve-plugin-sdk"
+    "url": "https://github.com/readwritetools/rwserve-plugin-sdk.git"
   },
   "scripts": {
     "bump-version": "npm version patch && git push && git push --tags"
   },
+  "keywords": [
+    "rwserve",
+    "http2",
+    "plugins",
+  ],
+  "bugs": {
+    "url": "https://github.com/readwritetools/rwserve-plugin-sdk/issues"
+  },
+  "homepage": "https://rwserve.readwritetools.com/plugins/rwserve-plugin-sdk.blue",
   "files": [
-    "dist"
+    "dist",
+    "img"
   ]
 }
