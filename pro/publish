@@ -19,5 +19,5 @@ run {
 
 // ----------------------- publish to NPM  ------------------------- 
 run {
-	sh npm publish
+	sh npm publish ../
 }
