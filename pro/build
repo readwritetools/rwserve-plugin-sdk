@@ -13,4 +13,5 @@
 run {
 	sh renata exim				// convert any modified .js         from src --> dbg
 //	sh renata deploy			// minify, bump version, push repo
+//  sh publish					// publish to NPM
 }

@@ -83,4 +83,21 @@ module.exports = class HelloWorldPlugin {
 }
 </pre>
 
+### Prerequisites
+
+This is a plugin for the **Read Write Tools HTTP/2 Server**, which works on Linux
+platforms. Windows, MacOS and BSD are not supported.
+
+
+<table>
+	<tr><th>Software</th> <th>Minimum Version</th></tr>
+	<tr><td>Ubuntu</td> <td>16</td></tr>
+	<tr><td>Debian</td> <td>9</td></tr>
+	<tr><td>Fedora</td> <td>27</td></tr>
+	<tr><td>CentOS</td> <td>7.4</td></tr>
+	<tr><td>RHEL</td> <td>8</td></tr>
+	<tr><td>RWSERVE</td> <td>1.0</td></tr>
+	<tr><td>Node.js</td> <td>10.3</td></tr>
+</table>
+
 <p align=center><a href='https://readwritetools.com'><img src='./img/rwtools.png' width=80 /></a></p>
