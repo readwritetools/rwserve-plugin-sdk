@@ -10,11 +10,13 @@
 //=============================================================================
 
 var expect = require('./expect.function.js');
+var aver = require('./aver.function.js');
 var log = require('./log.class.js');
 var SC = require('./http-status-code.enum.js');
 
 module.exports = {
 	expect,
+	aver,
 	log,
 	SC
 }
