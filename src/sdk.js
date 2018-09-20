@@ -10,11 +10,13 @@
 //=============================================================================
 
 import expect		from './expect.function';
+import aver			from './aver.function';
 import log			from './log.class';
 import SC			from './http-status-code.enum';
 
 export default {
 	expect,
+	aver,
 	log,
 	SC
 }
