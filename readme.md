@@ -25,17 +25,19 @@ are free to develop your plugin with your own set of helper functions.
 
 #### Contents
 
-   * `log` is a module for logging actions in a way that is compatible with the <a href='https://rwserve.readwritetools.com/logging.blue'>server's standard logging</a> function.
-
-   * `SC` is an enum for <a href='https://rwserve.readwritetools.com/status-codes.blue'>HTTP response status codes</a>.
+   * `log` is a module for logging actions in a way that is compatible with the <a href='https://rwserve.readwritetools.com/logging.blue'>server's standard logging</a>
+function.
+   * `SC` is an enum for <a href='https://rwserve.readwritetools.com/status-codes.blue'>HTTP response status codes</a>
+.
    * `expect` is a function for explicit argument type checking used in *design by
       contract* principles. It acts like a *soft assertion*, logging unmet expectations,
       but allowing your code to continue as best it can.
 
 ### Download
 
-The SDK is available from <a href='https://www.npmjs.com/package/rwserve-plugin-sdk'>NPM</a>. Before proceeding, you should already have `Node.js` and
-`RWSERVE` configured and tested.
+The SDK is available from <a href='https://www.npmjs.com/package/rwserve-plugin-sdk'>NPM</a>
+. Before proceeding, you should already have `Node.js` and `RWSERVE` configured and
+tested.
 
 This module should be installed on your web server in a well-defined place, so
 that it can be shared by all `RWSERVE` plugins. The standard location is `/srv/rwserve-plugins`
@@ -73,7 +75,7 @@ module.exports = class HelloWorldPlugin {
         expect(workOrder, 'WorkOrder');
         try {
             workOrder.addStdHeader('hello-world', this.hostname);
-            workOrder.setOutgoingPayload(`Hello World ${this.hostname}`);
+            workOrder.setResponseBody(`Hello World ${this.hostname}`);
             workOrder.setStatusCode(SC.OK_200);
         }
         catch (err) {
