@@ -31,8 +31,9 @@ compare {
 
 // ---------- Convert blue document into Github Flavored readme.md ---------- 
 recurse {
-	source '/palau/www/rwserve.readwritetools.com/plugins/rwserve-plugin-sdk.blue'
+	source '/palau/www/rwserve.readwritetools.com/plugins/ghfm/rwserve-plugin-sdk.blue'
 	dest   '../readme.md' 
+	overwrite older
 	exec ghfm
 }
 
