@@ -15,7 +15,8 @@
   "keywords": [
     "rwserve",
     "http2",
-    "plugins"
+    "plugins",
+    "readwritetools"
   ],
   "bugs": {
     "url": "https://github.com/readwritetools/rwserve-plugin-sdk/issues"
