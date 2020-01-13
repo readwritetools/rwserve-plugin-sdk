@@ -5,12 +5,6 @@
 
 
 
-<a href='https://rwserve.readwritetools.com'><img src='./img/rwserve.png' width=80 align=right /></a>
-
-###### Stuff you'll want, when writing your plugin
-
-# RWSERVE Plugin SDK
-
 
 <table>
 	<tr><th>Abstract</th></tr>
@@ -85,21 +79,17 @@ module.exports = class HelloWorldPlugin {
 }
 </pre>
 
-### Prerequisites
+### License
 
-This is a plugin for the **Read Write Tools HTTP/2 Server**, which works on Linux
-platforms. Windows, MacOS and BSD are not supported.
+The <span>rwserve-plugin-sdk</span> is licensed under the MIT
+License.
+
+### Availability
 
 
 <table>
-	<tr><th>Software</th> <th>Minimum Version</th></tr>
-	<tr><td>Ubuntu</td> <td>16</td></tr>
-	<tr><td>Debian</td> <td>9</td></tr>
-	<tr><td>Fedora</td> <td>27</td></tr>
-	<tr><td>CentOS</td> <td>7.4</td></tr>
-	<tr><td>RHEL</td> <td>8</td></tr>
-	<tr><td>RWSERVE</td> <td>1.0</td></tr>
-	<tr><td>Node.js</td> <td>10.3</td></tr>
+	<tr><td>Source code</td> 			<td><a href='https://github.com/readwritetools/rwserve-plugin-sdk'>github</a></td></tr>
+	<tr><td>Package installation</td> <td><a href='https://www.npmjs.com/package/rwserve-plugin-sdk'>NPM</a></td></tr>
+	<tr><td>Documentation</td> 		<td><a href='https://hub.readwritetools.com/plugins/rwserve-plugin-sdk.blue'>Read Write Hub</a></td></tr>
 </table>
 
-<p align=center><a href='https://readwritetools.com'><img src='./img/rwtools.png' width=80 /></a></p>
