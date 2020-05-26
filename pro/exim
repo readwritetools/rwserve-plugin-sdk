@@ -12,7 +12,6 @@
 
 template {
 	eximjs 		 eximjs <source> <dest>
-	ghfm		blue compile <source> <dest> --emit=ghfm
 }
 
 // ---------- rewrite export/import (src) ---------- 
@@ -29,11 +28,16 @@ compare {
 	dest      '../src'
 }
 
-// ---------- Convert blue document into Github Flavored readme.md ---------- 
-recurse {
-	source '/palau/www/rwserve.readwritetools.com/plugins/ghfm/rwserve-plugin-sdk.blue'
-	dest   '../readme.md' 
+// ---------- copy dbg to srv/rwserve-plugin for in-place testing ---------- 
+copy {
+	source    '../dbg'
+	dest      '/srv/rwserve-plugins/node_modules/rwserve-plugin-sdk/dist'
 	overwrite older
-	exec ghfm
 }
 
+// ---------- copy package.json to srv/rwserve-plugin for in-place testing ---------- 
+copy {
+	source    '../package.json'
+	dest      '/srv/rwserve-plugins/node_modules/rwserve-plugin-sdk/package.json'
+	overwrite older
+}
