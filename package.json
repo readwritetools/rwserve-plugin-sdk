@@ -1,6 +1,6 @@
 {
   "name": "rwserve-plugin-sdk",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Functions, classes and enums for developing RWSERVE plugins",
   "author": "Read Write Tools",
   "license": "MIT",
